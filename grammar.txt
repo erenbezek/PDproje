@@ -1,0 +1,26 @@
+# Temel ifadeler
+<statement>      → <declaration> | <assignment> | <if-statement> | <while-statement>;
+
+# Değişken tanımlama
+<declaration>    → 'int' <identifier> ';';
+
+# Atama
+<assignment>     → <identifier> '=' <expression> ';';
+
+# If yapısı
+<if-statement>   → 'if' '(' <condition> ')' '{' <statement>* '}';
+
+# While yapısı
+<while-statement> → 'while' '(' <condition> ')' '{' <statement>* '}';
+
+# İfade (aritmetik)
+<expression>     → <term> (('+' | '-') <term>)*;
+<term>           → <factor> (('*' | '/') <factor>)*;
+<factor>         → <number> | <identifier>;
+
+# Koşul
+<condition>      → <expression> ('==' | '!=' | '<' | '>') <expression>;
+
+# Temel bileşenler
+<identifier>     → bir veya daha fazla harf, rakam, alt çizgi ile başlayan bir isim;
+<number>         → 0-9 arası rakamlardan oluşan bir sayı;
