@@ -1,45 +1,39 @@
 # PDproje
 
- Proje Adı:
-Java Dilinde Sözdizimi Renklendirme ve Hata Denetimi Aracı
+ Proje Adı: Real-Time Grammar-Based Syntax Highlighter with GUI
 
-👨‍💻 Kullanılan Teknolojiler:
-Java Swing (grafik arayüz)
 
-Regex tabanlı Lexer (sözcük tanıma)
 
-Basit Parser (parantez denetimi)
+# Projenin Amaci:
+Bu proje, kullanıcı tarafından yazılan Java kodlarını anlık olarak analiz eden ve
 
-JTextPane + StyledDocument ile canlı renklendirme
+anahtar kelimeleri tanıyan, renklendiren, 
 
-🎯 Projenin Amacı:
-Bu proje, kullanıcı tarafından yazılan Java kodlarını anlık olarak analiz eden ve:
+söz dizimsel olarak hatalı olup olmadığını belirleyen,
 
-Anahtar kelimeleri tanıyan ve renklendiren
-
-Söz dizimsel olarak hatalı olup olmadığını belirleyen
-
-Parantezlerin dengeli olup olmadığını kontrol eden
+parantezlerin dengeli olup olmadığını kontrol eden
 
 basit bir Java syntax highlighter oluşturmayı amaçlar.
 
-🔧 Yapılanlar:
+# Yapılanlar:
+
 CodeEditor.java: Kod yazma alanı ve canlı analiz sistemi
 
-Lexer.java: Token (sözcük) sınıflandırması
+Lexer.java: Token sınıflandırması
 
-TokenType.java: Anahtar kelimeler, parantezler, sayı vs. gibi token türleri
+TokenType.java: Anahtar kelimeler, parantezler, sayı gibi token türleri
 
 Parser.java: Blok parantez kontrolü { }
 
 Main.java: Uygulama giriş noktası
 
-🚀 Özellikler:
-Gerçek zamanlı analiz (yazarken kontrol)
+# Özellikler:
 
-“if”, “while”, “int” gibi anahtar kelimelerin renklendirilmesi
+--Gerçek zamanlı analiz
 
-Süslü parantezlerin dengeli olup olmadığını kontrol eden Parser
+--“if”, “while”, “int” gibi anahtar kelimelerin renklendirilmesi
 
-Kullanıcıya geçerli / geçersiz kod uyarısı
+--Süslü parantezlerin dengeli olup olmadığını kontrol eden Parser
+
+--Kullanıcıya geçerli / geçersiz kod uyarısı verme
 
